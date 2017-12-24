@@ -1,0 +1,35 @@
+{% extends "templates/base.html" %}
+ 
+{% block title %}
+Discussion board - Homepage
+{% endblock %}
+
+{% block title2 %}
+Discussion board - Homepage
+{% endblock %}
+ 
+{% block content %}
+	{% if subject_list %}
+		<ul>
+		{% for subject in subject_list %}
+			<li> 
+				<div class="instance">
+					<p>{{ subject.date|date:"f j F Y" }}    Author：<b>{{ subject.name}}</b><br>
+					<a href="/{{subject.id}}/">{{ subject.title }}</a></p>
+				</div>
+			</li>
+		{% endfor %}
+		</ul>
+	{% else %}
+	No any topic available for now...
+ 
+	{% endif %}
+{% endblock %}
+ 
+{% block sidebar %}
+	<a href="writeSubject">Add new topic</a>
+{% endblock %}
+
+{% block sidebar2 %}
+	<a href="/">Back to Homepage</a>
+{% endblock %}

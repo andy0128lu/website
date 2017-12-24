@@ -1,0 +1,37 @@
+{% extends "templates/base.html" %}
+ 
+{% block title %}
+Discussion board - {{ subject.title }}
+{% endblock %}
+
+{% block title2 %}
+Discussion board - {{ subject.title }}
+{% endblock %}
+
+ 
+{% block content %}
+	<h1>Topic：{{ subject.title }}</h1>
+  	<b>Author: </b>{{ subject.name}}<br>
+  	<b>Time: </b>{{ subject.date|date:"j F, Y" }}<br>
+	<p><div class="text_read">{{subject.content}}</div></p>
+ 
+	{% if comments %}
+		<p class="comment_break">--- Comments on the topic ---</p>
+		{% for comment in comments %}
+			<div class="reply"> 
+				{{ comment.date|date:"j F, Y" }} replied by -- <b>Author: </b>{{ comment.name}}
+ 				<p class="comment_content">{{ comment.content }}</p>
+ 			</div>	
+		{% endfor %}
+	{% else %}
+		<p class="reply">No reply for now</p>
+	{% endif %}
+{% endblock %}
+ 
+{% block sidebar %}
+	<a href="add">Reply the topic</a>
+{% endblock %}
+
+{% block sidebar2 %}
+	<a href="/board">Back to Discussion Board</a><br>
+{% endblock %}

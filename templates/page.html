@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>顯示頁數及現在時間</title>
+	</head>
+ 
+	<body>
+		<h1>現在時間是 {{ current_time }} 。</h1>
+		{% ifequal offset "99" %}
+			<p>這是最後一頁囉！</p>
+		{% else %}
+			<p>您來到了第 {{ offset }} 頁。</p>
+		{% endifequal %}
+	</body>
+</html>

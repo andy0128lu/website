@@ -1,0 +1,30 @@
+{% extends "templates/base.html" %}
+ 
+{% block title %}
+	Discussion board - Reply to the topic
+{% endblock %}
+
+{% block title2 %}
+	Discussion board - Reply to the topic
+{% endblock %}
+ 
+{% block content %}
+	<form action="/{{ subject.id }}/postComment/" method="post">
+		<h1>Reply to: {{ subject.title }}</h1>
+		Your name：<br>
+		<input type="text" name="name"><br>
+ 		Your content:<br>
+ 		<textarea rows="10" cols="70" name="content"></textarea><br>
+		<input type="submit" value="post" />
+		{% csrf_token %}
+	</form>
+{% endblock %}
+ 
+{% block sidebar %}
+	<a href="/board">Back to Discussion board</a>
+
+{% endblock %}
+
+{% block sidebar2 %}
+	<a href="/">Back to Homepage</a>
+{% endblock %}

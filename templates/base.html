@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+ 
+	<head>
+		<title>{% block title %} Discussion board {% endblock %}</title>
+		<link rel=stylesheet href="/static/css/style_discussion board.css" type="text/css">
+	</head>
+ 
+	<body>
+		<div class="wrapper">
+			<div class="heading"><center><h1>{% block title2 %}{% endblock %}<h1></center></div>
+ 
+			<div class="content">
+				<div id="sidebar" class="sidebar">{% block sidebar %}{% endblock %}</div>
+				<div class="sidebar">{% block sidebar2 %}{% endblock %}</div><br>
+				<div class="topic" id="entries">{% block content %}{% endblock %}</div>
+
+			</div>
+		</div>
+	</body>
+ 
+</html>
