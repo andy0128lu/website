@@ -2,7 +2,7 @@
 
 ![Image](Screenshot/banner.jpg)
 
-Based on the description of the project, I needed to build a website for a fictitious government and chose promoting traveling in Melbourne as the topic of the government website. As a result of that it is my first year in Melbourne, I think that there are a lot of things to explore in the city.
+To hone my skills of web development, I would like to development a website for travelling information service which features a discussion board, AI chatbot and data visualization. As a result of that it is my first year in Melbourne, I think that there are a lot of things to explore in the city.
 
 The major techniques used to implement the website are Python and Django. This combination is the most popular way to implement a website. Plus, I also used some useful components via Bootstrap, such as CSS-based components. The major feature of Django is that it implements the MVC, or I should say MTV, so that the website is easily to scale up and maintain. On the other hand, I would like to add other features to the website: ChatBot and Data visualization. I think the variety of libraries of Python and techniques compatible to it would be very helpful. All works were running in the python virtual environment to make sure that the work is independent from others. That was why I chose Python and Django to implement the website.
 
