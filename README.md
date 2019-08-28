@@ -1,5 +1,5 @@
 # Website for Melbourne travel guide 
-## [Website demo](http://andy0128lu.pythonanywhere.com)
+## [Demo website](http://andy0128lu.pythonanywhere.com)
 
 ![Image](Screenshot/banner.jpg)
 
