@@ -4,7 +4,7 @@ ChatterBot==0.8.1
 chatterbot-corpus==1.1.1
 dj-database-url==0.5.0
 dj-static==0.0.6
-Django==2.0
+Django==2.2.10
 django-heroku==0.3.1
 future==0.16.0
 gunicorn==19.9.0
